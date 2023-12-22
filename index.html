@@ -1,0 +1,1653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Kelas</title>
+    <!-- CSS TAILWIND -->
+    <link rel="stylesheet" href="dist/output.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <!-- SCRIPT CAROUSEL -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- script tailwind -->
+    <script>
+         tailwind.config = {
+          theme: {
+          extend :{
+            animation:{
+                 'goyang': 'goyang 1s ease-in-out infinite'
+               },
+                keyframes: {
+                 goyang: {
+               '0%, 100%' : { transform: 'rotate(-3deg)'},
+               '50%' : { transform: 'rotate(3deg)'},
+                  },
+                },
+            },
+          },
+         };
+    </script>
+    <style>
+      .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .carousel-item {
+        min-width: 100%;
+      }
+    .hamburger-line {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    </style>
+</head>
+<body>
+<!-- Header Start-->
+<header class="bg-white border-b border-gray-400  fixed top-0 left-0 w-full  z-10">
+    <div class="container">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <h5 href="#home" class="font-bold text-3xl text-blue-400 block mx-6 py-6  " data-aos="zoom-in" data-aos-duration="1000">XII RPL 2 💻</h5>
+            </div>
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300 origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300"></span>
+                    <span class="hamburger-line transition duration-300 origin-bottom-left"></span>
+                </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-5
+                top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none mx-0">
+                    <ul class="block lg:flex -mx-5">
+                        <li class="group">
+                        </li>
+                        <li class="group">
+                            <a href="#carousel" class="text-base text-dark py-2 mx-7 flex group-hover:text-blue-500">Carousel</a>
+                        </li>
+                        <li class="group">
+                            <a href="#data_diri" class="text-base text-dark py-2 mx-7 flex group-hover:text-blue-500">Data Diri Siswa</a>
+                        </li>
+                        <li class="group">
+                            <a href="#struktur_kelas" class="text-base text-dark py-2 mx-7 flex group-hover:text-blue-500">Struktur Kelas</a>
+                        </li>
+                        <li class="group">
+                            <a href="#foto_video" class="text-base text-dark py-2 mx-7 flex group-hover:text-blue-500">Foto & Video</a>
+                        </li>
+                        <li class="group">
+                            <a href="#kontak_kelas" class="text-base text-dark py-2 mx-7 flex group-hover:text-blue-500">Contact Class</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header End-->
+
+ <!-- Hero carousel Start-->
+ <section id="carousel" class="pt-36 pb-9 ">
+        <div class="container mx-auto ">
+          <div class="relative overflow-hidden rounded-xl shadow-2xl shadow-blue-500">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="dist/img/1.jpg"  alt="Slide 1">
+              </div>
+              <div class="carousel-item">
+                <img src="dist/img/4.jpg" alt="Slide 2">
+              </div>
+              <div class="carousel-item">
+                <img src="dist/img/2.jpg" alt="Slide 3">
+              </div>
+            </div>
+          </div>
+          <h2 class="font-bold text-slate-950 text-3xl sm:text-4xl lg:text-5xl mt-6 text-center font-serif"> XII RPL 2 💻</h2>
+        </div>
+</section>
+<!-- Hero carousel End-->
+
+<!-- Data diri section start-->
+<section id="data_diri" class="pt-36 pb-32 bg-slate-100 ">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h3 class="font-bold text-lg text-blue-400 mb-2" >Data Diri Siswa</h3>
+                <h2 class="font-bold  mb-4 text-3xl sm:text-4xl lg:text-5xl">Kenalin Nih 🤝</h2>
+                <p class="font-bold text-md text-slate-600 md:text-lg">
+                    Mau nyari yang kaya mana semuanya ada disini kelas ini mau yang ganteng? semua ganteng,
+                    mau yang cantik? semua cantik, mau yang lucu? semua pelawak hehe. Lengkap deh semuanya😁
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-wrap">
+            <!--dimas-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3" >
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500 " data-aos="fade-right" data-aos-duration="1000">
+                    <img src="dist/img/foto siswa/dimas.jpg" alt="dimas"
+                    class="w-80 mx-auto h-96" >
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                        <p class="font-medium text-base text-secondary mb-1">
+                            Nama : Dimas Suaji Habibi
+                        </p>
+                        <p class="font-medium text-base text-secondary mb-1">
+                            Tempat Tanggal Lahir : 10 Juli 2006
+                        </p>
+                        <p class="font-medium text-base text-secondary mb-1">
+                            Alamat : JL. H.O.S COKROAMINOTO NO 72
+                        </p>
+                        <p class="font-medium text-base text-secondary mb-1">
+                            Tamatan : SMP N 13 MEDAN
+                        </p>
+                        <div class="flex items-center mt-3">
+                            <!--Instagram-->  
+                            <a href="https://instagram.com/dimasss.sh" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                            hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                            
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                            <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                            </a>
+   
+                            <!--Facebook-->
+                            <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                            hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                            <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                            </a>
+   
+                            <!--Twitter-->
+                            <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                            hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                            </a>
+   
+                            <!--Tiktok-->
+                            <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                            hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                            </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <!--steven-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" data-aos="fade-down" data-aos-duration="1000">
+                    <img src="dist/img/foto siswa/steven.jpg" alt="steven"
+                    class="w-80 mx-auto h-96" height="100px">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Steven Yesaya Darmawan Situmorang
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 9 September 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. PERJUANGAN Gg.ROMA NO.22
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP SWASTA BUDI MURNI 4
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/Yesayastev" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--arif-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500 "data-aos="fade-left" data-aos-duration="1000">
+                    <img src="dist/img/foto siswa/arif.jpg" alt="arif"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Muhammad Arif
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 23 Februari 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. PLATINA V LK XII
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP N 33 MEDAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/m_arriifff" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--vani-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/vani.jpg" alt="vani"
+                    class="mx-auto h-96" style="width:70%;">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Vani Julian Putri Zebua
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Kutacane, 7 Juli 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. PENDIDIKAN 1 DUSUN XI
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP N 8 PERCUT SEI TUAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/ze.vani" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--fadila-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500"
+                data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/fadila.jpg" alt="fadila"
+                    class="w-full h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Fadilah Salsabila Elphi L
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 1 Desember 2007
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : ASR. TNI AD JL. SEJATI BLOK J-38
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP N 37 MEDAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/fadilahsalsabilael" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--aury-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/aury.jpg" alt="aury"
+                    class="w-96 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Aury Khalida Nazla
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Sei Rotan, 20 Mei 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. PENDIDIKAN DSN II DESA BANDAR SETIA
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS ZIA SALSABILA ISLAMIC SCHOOL
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/a_khanary" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--ayunda-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/ayunda.jpg" alt="ayunda"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Ayunda Lestari
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 15 Juli 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. PERDAMAIAN Gg.Perdamaian 11 DESA KOLAM
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS SWASTA UINSU 
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/ayundalestari.surbakti15" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--sami-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/sami.jpg" alt="sami"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Nadila Shamimi
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 13 Juli 2004
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. SIDODAME KOMP.PURI SIDODAME NO.4
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS DMP DINIYYAH PUTERI
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/shmnadila" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--dio-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/dio.jpg" alt="dio"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Dio Bima Pangestu
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Punden Rejo, 3 Juni 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. PUNDEN REJO DUSUN III
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS NURUL ITTIHADIYAH
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/diopangesyu" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--roid-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/roid.jpg" alt="roid"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Roid Rusydi Siregar
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 22 Mei 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : PERUM GRIYA NABILA II BLOK M N0 1 JL.Mesjid Desa Kolam
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS AL JAMIYATUL WASHLIYAH
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/russ22_" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                              <!--Facebook-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                              <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                              </a>
+     
+                              <!--Twitter-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                              </a>
+     
+                              <!--Tiktok-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                              </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--iqbal-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/iqbal.jpg" alt="iqbal"
+                    class="w-full h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Iqbal Munahar
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 21 Maret 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. KAPT RAHMADBUDDIN LINK 08 PASAR V MARELAN
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP N 20 MEDAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/iqbalm_aja" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--raju-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/raju.jpg" alt="raju"
+                    class="w-full h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" 
+                            class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Sirajuddin
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Sugiharjo, 10 Maret 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : DUSUN III DESA SUGIHARJO 
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS NURUL KHAIRIAH
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/rajusrdd_" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--rafli-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/rafli.jpg" alt="rafli"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Rafli Al Ghifari Nasution
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Pematangsiantar, 31 Maret 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. BAJAK 2 VILL MUTIARA 3 H-19
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SWASTA KHAIRUL IMAM
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/raflialghifari.nst" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                 <!--Facebook-->
+                                 <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                 hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                 <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                 </a>
+        
+                                 <!--Twitter-->
+                                 <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                 hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                 <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                 </a>
+        
+                                 <!--Tiktok-->
+                                 <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                 hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                 <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                 <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                 </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--dewa-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/dewa.jpg" alt="dewa"
+                    class="w-full mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Ghazwan Dewa Putra Muchari
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 17 April 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : GRIYA MARTUBUNG 3 BLOK AA JL.GURAME NO 277
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP N 25 MEDAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/ghzwnn_12" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--variq-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/variq.jpg" alt="variq"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Variq Reihan Eisyahra
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 30 April 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. SEI KERA Gg.RUSLAN NO 13
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP MUHAMMADIYAH 02 MEDAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/vicky_300406" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                               <!--Facebook-->
+                               <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                               hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                               <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                               </a>
+      
+                               <!--Twitter-->
+                               <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                               hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                               <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                               </a>
+      
+                               <!--Tiktok-->
+                               <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                               hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                               <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                               </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--gilang-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/gilang.jpg" alt="gilang"
+                    class="w-full h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Gilang Ramadhansyah
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 6 Oktober 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. KAYU PUTIH NO 254
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP BRIGJEND KATAMSO
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/gilangramadhansyah_" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                               <!--Facebook-->
+                               <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                               hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                               <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                               </a>
+      
+                               <!--Twitter-->
+                               <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                               hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                               <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                               </a>
+      
+                               <!--Tiktok-->
+                               <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                               hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                               <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                               <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                               </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--abi-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-down" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/abi.jpg" alt="abi"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Abiyyu Hanifan
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 13 November 2005
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. RAWE III LINK.VI  
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMPS ISLAM ANNUR PRIMA
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/abi.hnf" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--arlan-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/arlan.jpg" alt="arlan"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Arlan Mulia Qardaya S
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 16 November 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : JL. BHAYANGKARA LINK.V MEDAN
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : SMP N 35 MEDAN
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/aslaaaaan_" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                              <!--Facebook-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                              <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                              </a>
+     
+                              <!--Twitter-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                              </a>
+     
+                              <!--Tiktok-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                              </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--hilmi-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-right" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/hilmi.jpg" alt="hilmi"
+                    class="w-full h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Muhammad Hilmi Syuhada 
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 2 Juni 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : TANJUNG MULIA Gg.BILAL LINK.24
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS SWASTA BINA SANTRI
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/hilmysyuhada" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                                <!--Facebook-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                                </a>
+       
+                                <!--Twitter-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                                </a>
+       
+                                <!--Tiktok-->
+                                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+            <!--handrian-->
+            <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 shadow-blue-500" 
+                data-aos="fade-left" data-aos-duration="1000" data-aos-offset="300">
+                    <img src="dist/img/foto siswa/handrian.jpg" alt="handrian"
+                    class="w-80 mx-auto h-96">
+                    <div class="py-8 px-6">
+                        <h3><a href="#" class="block mb-3 font-semibold text-xl text-slate-900
+                            hover:text-blue-400 truncate">Data Diri Siswa</a></h3>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Nama : Handrian Ramadhan 
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tempat Tgl Lahir : Medan, 5 Oktober 2006
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Alamat : DUSUN XIII JATI LUHUR 
+                            </p>
+                            <p class="font-medium text-base text-secondary mb-1">
+                                Tamatan : MTS DARUL ULUM BUDI AGUNG
+                            </p>
+                            <div class="flex items-center mt-3">
+                                <!--Instagram-->  
+                                <a href="https://instagram.com/handrianrmadhan" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                                hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                                
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                                </a>
+       
+                              <!--Facebook-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                              <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                              </a>
+     
+                              <!--Twitter-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                              <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                              </a>
+     
+                              <!--Tiktok-->
+                              <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-600
+                              hover:border-blue-500 hover:bg-blue-400 hover:text-white text-slate-400">
+                              <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>TikTok</title>
+                              <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                              </a>
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- Data diri section start-->
+
+<!-- struktur kelas section start-->
+<section id="struktur_kelas" class="pt-36 pb-44 bg-slate-600">
+    <div class="container mx-auto">
+    <div class="flex flex-wrap">
+    <div class="w-full px-4">
+        <div class="max-w-xl mx-auto text-center mb-16">
+            <h3 class="font-bold text-xl text-blue-400 mb-2" >Struktur Kelas</h3>
+            <h2 class="font-bold text-white mb-4 text-3xl sm:text-4xl lg:text-4xl">Jabatan Dan Anggota Kelas</h2>
+        </div>
+    </div>
+    <div class="relative text-left w-[80%] mx-auto">
+        <button id="dropdownButton" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex w-full rounded-md border 
+        font-bold mx-auto border-gray-300 shadow-sm px-4 py-2 
+         bg-white text-xl text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+            Klik Untuk Melihat Struktur Kelas 👇    
+          </button>
+        
+          <div id="dropdownMenu" class="origin-top-right right-0 mt-2 rounded-md shadow-lg ring-2 ring-black ring-opacity-5 hidden">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+              <img src="dist/img/foto struktur kelas/struktur.jpg" alt="struktur" class="w-full mx-auto h-[30%] rounded-lg 
+              shadow-lg shadow-blue-300" role="menu">
+            </div>
+          </div>
+    </div>
+
+    <!--Jadwal Piket-->
+    <div class="w-full px-4 mt-24">
+        <div class="max-w-xl mx-auto text-center mb-16">
+            <h3 class="font-bold text-xl text-blue-400 mb-2" >Jadwal Piket XII RPL 2</h3>
+            <h2 class="font-bold text-white mb-4 text-3xl sm:text-4xl lg:text-4xl">Hari Dan Nama 📝</h2>
+        </div>
+    
+    <div class="container mx-auto my-8 text-left w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
+        <!--Senin-->
+        <div class="relative inline-block text-left mb-4 md:mb-0 mx-11 lg:mx-11">
+          <button id="dayDropdown" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex mx-auto justify-center w-full px-4 py-2 text-lg 
+          font-bold text-white bg-gray-800 border border-gray-800 rounded-md hover:bg-gray-700 focus:outline-none 
+          focus:ring focus:border-blue-300 active:bg-gray-800">
+            Senin
+            <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+    
+          <div id="dayDropdownMenu" class="hidden z-50 mt-2 space-y-2 origin-top-right absolute right-0 top-10 w-40 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Fadilah</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Ayunda</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Vani</a>
+          </div>
+        </div>
+        <!--Selasa-->
+        <div class="relative inline-block text-left mb-4 md:mb-0 mx-6 lg:mx-34">
+          <button id="selasaDropdown" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex mx-auto justify-center w-full px-4 py-2 text-lg font-bold
+           text-white bg-gray-800 border border-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-blue-300 
+           active:bg-gray-800">
+            Selasa
+            <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+    
+          <div id="selasaDropdownMenu" class="hidden z-50 mt-2 space-y-2 origin-top-right absolute right-0 top-10 w-40 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Aury</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Nadila</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Steven</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Variq</a>
+          </div>
+        </div>
+        <!--Rabu-->
+        <div class="relative inline-block text-left mt-4 md:mb-0 mx-11">
+          <button id="rabuDropdown" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex mx-auto justify-center w-full px-4 py-2 text-lg font-bold
+           text-white bg-gray-800 border border-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-blue-300
+            active:bg-gray-800">
+            Rabu
+            <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+    
+          <div id="rabuDropdownMenu" class="hidden z-50 mt-2 space-y-2 origin-top-right absolute right-0 top-10 w-40 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Dimas</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Gilang</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Rafli</a>
+          </div>
+        </div>
+        <!--kamis-->
+        <div class="relative inline-block text-left mb-4 md:mb-0 mt-4 mx-6 lg:mx-34">
+          <button id="kamisDropdown" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex mx-auto justify-center w-full px-4 py-2 text-lg font-bold text-white bg-gray-800 border border-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-blue-300 active:bg-gray-800">
+            Kamis
+            <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+    
+          <div id="kamisDropdownMenu" class="hidden z-50 mt-2 space-y-2 origin-top-right absolute right-0 top-10 w-40 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Hilmi</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Dewa</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Raju</a>
+          </div>
+        </div>
+        <!--jumat-->
+        <div class="relative inline-block text-left mb-4 md:mb-0 mt-4  mx-11 lg:mx-11">
+          <button id="jumatDropdown" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex mx-auto justify-center w-full px-4 py-2 text-lg font-bold text-white bg-gray-800 border border-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-blue-300 active:bg-gray-800">
+            Jumat
+            <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+    
+          <div id="jumatDropdownMenu" class="hidden z-50 mt-2 space-y-2 origin-top-right absolute right-0 top-10 w-40 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Arif</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Dio</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Roid</a>
+          </div>
+        </div>
+        <!--sabtu-->
+        <div class="relative inline-block text-left mb-4 md:mb-0 mt-4 mx-5 lg:mx-34">
+          <button id="sabtuDropdown"  type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex mx-auto justify-center w-full px-4 py-2 text-lg font-bold text-white bg-gray-800 border border-gray-800 rounded-md hover:bg-gray-700 focus:outline-none focus:ring focus:border-blue-300 active:bg-gray-800">
+            Sabtu
+            <svg class="w-5 h-5 ml-2 -mr-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+    
+          <div id="sabtuDropdownMenu" class="hidden z-50 mt-2 space-y-2 origin-top-right absolute right-0 top-10 w-40 bg-white border border-gray-300 divide-y divide-gray-200 rounded-md shadow-lg">
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Abi</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Iqbal</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Handrian</a>
+            <a href="#" class="block px-4 py-2 text-xl font-bold text-gray-700  hover:text-blue-400">Arlan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Denah Kelas -->
+    <div class="w-full px-4 mt-24">
+        <div class="max-w-xl mx-auto text-center mb-16">
+            <h3 class="font-bold text-xl text-blue-400 mb-2" >Denah Kelas</h3>
+            <h2 class="font-bold text-white mb-4 text-3xl sm:text-4xl lg:text-4xl">Tempat Dan Posisi Duduk</h2>
+        </div>
+    </div>
+    <div class="relative text-left w-[80%] mx-auto">
+        <button id="dropdownSubmit" type="button" data-aos="zoom-in-up" data-aos-duration="1000" class="inline-flex w-full rounded-md border 
+        font-bold mx-auto border-gray-300 shadow-sm px-4 py-2 
+         bg-white text-xl text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500">
+            Klik Untuk Melihat Denah Kelas 👇    
+          </button>
+        
+          <div id="dropdownDenah" class="origin-top-right right-0 mt-2 rounded-md shadow-lg ring-2 ring-black ring-opacity-5 hidden">
+            <div class="py-1" role="denah" aria-orientation="vertical" aria-labelledby="options-denah">
+              <img src="dist/img/foto struktur kelas/denah.jpg" alt="struktur" class="w-full mx-auto h-[30%] rounded-lg 
+              shadow-lg shadow-blue-300" role="menu">
+            </div>
+          </div>
+    </div>
+    </div>
+    </div>
+  
+</section>
+<!-- struktur kelas section end-->
+    
+<!-- foto dan video section start -->
+<section id="foto_video" class="pt-36 pb-50 bg-gradient-to-r from-indigo-100 to-yellow-300 ">
+    <div class="container mx-auto">
+    <div class="flex flex-wrap">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h3 class="font-bold text-xl text-blue-600 mb-2" >Galeri Random</h3>
+                <h2 class="font-bold text-slate-900 mb-4 text-3xl sm:text-4xl lg:text-4xl">Foto Dan Video 📸</h2>
+            </div>
+        </div>
+        <div class="flex flex-wrap">
+        <!--foto 1-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 ">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10  " data-aos="fade-right" data-aos-duration="1000">
+                <img src="dist/img/video siswa/1.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+        <!--video 1-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white round-xl shadow-md rounded-lg overflow-hidden mb-10" data-aos="fade-down" data-aos-duration="1000">
+              <div class="video-container">
+                <video class="w-[100%] h-96 round-lg" controls>
+                  <source src="dist/img/video siswa/1.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        <!--foto 2-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-left" data-aos-duration="1000">
+                <img src="dist/img/video siswa/2.jpg" alt="dimas"
+                    class="w-96 mx-auto h-96" >
+            </div>
+        </div>
+        <!--foto 3-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
+                <img src="dist/img/video siswa/3.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+         <!--video 2-->
+         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white round-xl shadow-md rounded-lg overflow-hidden mb-10 " data-aos="fade-down" data-aos-duration="1000">
+              <div class="video-container">
+                <video class="w-[100%] h-96 round-lg" controls>
+                  <source src="dist/img/video siswa/2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+           <!--foto 4-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-left" data-aos-duration="1000">
+                <img src="dist/img/video siswa/4.jpg" alt="dimas"
+                    class="w-96 mx-auto h-96" >
+            </div>
+        </div>
+           <!--foto 5-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
+                <img src="dist/img/video siswa/5.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+           <!--foto 6-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-down" data-aos-duration="1000">
+                <img src="dist/img/video siswa/6.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+           <!--foto 7-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-left" data-aos-duration="1000">
+                <img src="dist/img/video siswa/7.jpg" alt="dimas"
+                    class="w-96 mx-auto h-96" >
+            </div>
+        </div>
+           <!--foto 8-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
+                <img src="dist/img/video siswa/8.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+         <!--video 3-->
+         <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white round-xl shadow-md rounded-lg overflow-hidden mb-10 " data-aos="fade-down" data-aos-duration="1000">
+              <div class="video-container">
+                <video class="w-[100%] h-full round-lg" controls>
+                  <source src="dist/img/video siswa/4.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+           <!--foto 9-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-left" data-aos-duration="1000">
+                <img src="dist/img/video siswa/9.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+           <!--foto 10-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-right" data-aos-duration="1000">
+                <img src="dist/img/video siswa/10.jpg" alt="dimas"
+                    class="w-full mx-auto h-96" >
+            </div>
+        </div>
+         <!--video 4-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div class="bg-white round-xl shadow-md rounded-lg overflow-hidden mb-10 " data-aos="fade-down" data-aos-duration="1000">
+              <div class="video-container">
+                <video class="w-[100%] h-full round-lg" controls>
+                  <source src="dist/img/video siswa/3.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+        </div>
+            <!--foto 10-->
+        <div class="w-full px-4 lg:w-1/2 xl:w-1/3 " >
+            <div class="bg-white rounded-xl shadow-md overflow-hidden mb-10" data-aos="fade-left" data-aos-duration="1000">
+                <img src="dist/img/video siswa/11.jpg" alt="dimas"
+                    class="w-96 mx-auto h-96" >
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<!-- foto dan video section end -->
+
+<!-- Footer Start-->
+<footer id="kontak_kelas" class="bg-slate-800 pt-24 pb-12">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+                <h2 class="font-bold text-4xl text-white mb-5">XII RPL 2 🧐</h2>
+                <p>Jl. Bhayangkara No.484, Indra Kasih, Kec. Medan Tembung</p>
+                <P class="mb-5">Medan</P>
+                <h2 class="font-bold text-3xl text-white mb-5">TA. 2023-2024</h2>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/3 ">
+                <h3 class="font-semibold text-xl text-white mb-5">Semua Kenangan</h3>
+                <ul>
+                    <li>
+                        <a href="#foto_video" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Foto</a>
+                    </li>
+                    <li>
+                        <a href="#foto_video" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Video</a>
+                    </li>
+                    <li>
+                        <a href="#struktur_kelas" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400 mb-3">Struktur Kelas</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-full px-4 mb-12 md:w-1/3">
+                <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+                <ul>
+                    <li>
+                        <a href="#carousel" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Carousel</a>
+                    </li>
+                    <li>
+                        <a href="#data_diri" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Data Diri Siswa</a>
+                    </li>
+                    <li>
+                        <a href="#struktur_kelas" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Struktur Kelas</a>
+                    </li>
+                    <li>
+                        <a href="#foto_video" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Foto Dan Video</a>
+                    </li>
+                    <li>
+                        <a href="#kontak_kelas" class="inline-block text-base text-slate-300 
+                        hover:text-blue-400  mb-3">Contact Class</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <marquee class="animate-bounce" scrollamount="20" direction="right"><img src="dist/img/dino.jpg" alt="dino"
+            class="w-14 h-14 " >
+        </marquee>
+        <div class="w-full pt-10 border-t border-slate-700">
+            <div class="flex items-center justify-center mb-5">
+                <!--Instagram-->  
+                <a href="https://instagram.com/xii_rx2" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300
+                hover:border-blue-400 hover:bg-blue-400 hover:text-white text-slate-400">
+                
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title>
+                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                </a>
+
+                <!--Facebook-->
+                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300
+                hover:border-blue-400 hover:bg-blue-400 hover:text-white text-slate-400">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title>
+                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                </a>
+
+                <!--Twitter-->
+                <a href="#" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300
+                hover:border-blue-400 hover:bg-blue-400 hover:text-white text-slate-400">
+                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title>
+                <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                </a>
+           </div>
+           <p class="font-medium text-xs text-slate-400 text-center">Dibuat dengan 
+           <span class="text-pink-600">❤</span> Dan Keikhlasan Oleh <a href="https://instagram.com//ghzwnn_12" target="_blank" 
+           class="font-bold text-teal-400">XII RPL 2 😊</a</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer End-->
+
+
+
+<!-- Script Internal Js -->
+
+    <script src="dist/js/carousel.js"></script>
+    <script src="dist/js/dropwdown.js"></script>
+    <script src="dist/js/dropdownday.js"></script>
+    <script src="dist/js/video.js"></script>
+    <!-- SCRIPT AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--script untuk humberger-->
+   <script>
+    // navbar-fixed
+    window.onscroll = function () {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+
+    if (window.pageYOffset > fixedNav) {
+    header.classList.add('navbar-fixed');
+    } else {
+    header.classList.remove('navbar-fixed');
+    }
+    };
+
+    // hamburger
+    const hamburger = document.querySelector('#hamburger');
+    const navMenu = document.querySelector('#nav-menu');
+
+    hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('hamburger-active');
+    navMenu.classList.toggle('hidden');
+    });
+
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+    behavior: 'smooth'
+    });
+    });
+    });
+   </script>
+
+</body>
+</html>
